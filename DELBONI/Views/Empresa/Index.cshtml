@@ -1,0 +1,31 @@
+﻿@model Empresa
+@{
+    ViewData["Title"] = "Empresas";
+}
+
+<div class="text-center">
+    <n><h1 class="display-4">Cadastro de Empresas</h1></n>
+</div>
+
+<div class="bd-example">
+<form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Código:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" asp-for="Codigo" placeholder="Insira o código da empresa">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput1">Nome:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" asp-for="Nome" placeholder="Insira o nome da empresa">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Nome Fantasia:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" asp-for="NomeFantasia" placeholder="Insira o nome fantasia da empresa">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput3">CNPJ:</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" asp-for="CNPJ" placeholder="Insira o CNPJ da empresa">
+  </div>
+  <hr class="form-group">
+  <input type "submit" value="Create" class="btn btn-primary" />
+</form>
+</div>
